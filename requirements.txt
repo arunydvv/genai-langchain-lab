@@ -26,3 +26,7 @@ numpy
 scikit-learn
 torch
 accelerate
+
+# Streamlit UI
+streamlit
+
