@@ -1,6 +1,5 @@
 from langchain_core.prompts import PromptTemplate
 
-
 summary_template = PromptTemplate(
     template="""
 You are an expert academic paper summarizer.
@@ -59,12 +58,6 @@ Now generate the summary.
     validate_template=True
 )
 
+summary_template.save("template.json")
 
-
-prompt = summary_template.invoke({
-    "paper_input": "Your research paper content here",
-    "style_input": "Explain like I am a beginner",
-    "length_input": "Detailed"
-})
-
-print(prompt)
+print("Template saved successfully!")
